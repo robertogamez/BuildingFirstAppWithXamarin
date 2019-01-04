@@ -4,11 +4,11 @@
              xmlns:local="clr-namespace:WorkingDemo"
              x:Class="WorkingDemo.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello World!"></Label>
+            <Label Text="A second line" FontSize="Large" />
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
