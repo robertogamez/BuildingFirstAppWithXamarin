@@ -1,17 +1,20 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MyDiary.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace WorkingDemo
+namespace MyDiary
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

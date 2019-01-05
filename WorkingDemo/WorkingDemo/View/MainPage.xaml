@@ -8,6 +8,8 @@
         <StackLayout>
             <Label Text="Hello World!"></Label>
             <Label Text="A second line" FontSize="Large" />
+            <Button Text="Go to Page 2" Clicked="Button_Clicked" />
+            <Button Text="Go to Demo Layout" Clicked="DemoLayout_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 
