@@ -19,5 +19,15 @@ namespace WorkingDemo
         {
             Navigation.PushAsync(new DemoLayout());
         }
+
+        private void DataBinding_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DataBinding());
+        }
+
+        private void DemoListView_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListViewDemo());
+        }
     }
 }
