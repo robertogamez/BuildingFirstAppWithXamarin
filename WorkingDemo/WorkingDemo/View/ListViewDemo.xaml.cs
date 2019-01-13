@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WorkingDemo.Model;
 using WorkingDemo.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,5 +18,16 @@ namespace WorkingDemo
 			InitializeComponent();
             BindingContext = new ListViewViewModel();
 		}
-	}
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if(e.SelectedItem == null)
+            {
+                return;
+            }
+
+            Person person = e.SelectedItem as Person;
+            DisplayAlert("Selected", person.LastName, "OK");
+        }
+    }
 }
